@@ -1,6 +1,6 @@
 <script src="https://unpkg.com/vue"></script>
 <style>
-  .caixas {
+  .caixa {
     display: flex;
     justify-content: space-around;
   }
@@ -24,7 +24,7 @@
 </style>
 
 <div id="app">
-  <div class="caixas"> 
+  <div class="caixa"> 
     <div class="demo" :class="estilo" @click="aplicarC1 = !aplicarC1"></div>
     <div class="demo"></div>
     <div class="demo" :class="[classeCSS, {girar: aplicarGirar}]"></div>
