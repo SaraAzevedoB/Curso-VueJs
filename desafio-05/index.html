@@ -7,12 +7,11 @@
     para ver a diferença -->
   <h2>#01</h2>
   <div>
-    <button @click="espressao = !espressao">Alternar</button>
-    <p v-if="espressao">Você quer me ver ...</p>
+    <button @click="expressao = !expressao">Alternar</button>
+    <p v-if="expressao">Você quer me ver ...</p>
     <p v-else>...ou eu</p>
-    <!-- Quando é usado v-show é inserido display: none no codigo -->
-    <p v-show="espressao">Você quer me ver ...</p>
-    <p v-show="!espressao">...ou eu</p>
+    <p v-show="expressao">Você quer me ver ...</p>
+    <p v-show="!expressao">...ou eu</p>
   </div>
 
   <!-- 2) Exiba em uma <ul> um array de elementos da sua escolha.
